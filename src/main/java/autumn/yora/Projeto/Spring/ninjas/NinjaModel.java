@@ -32,7 +32,7 @@ public class NinjaModel {
     // ManyToOne um ninja tem uma única missão
     @ManyToOne
     @JoinColumn(name = "missao_id") // Foreign key
-    private Long id_missao;
+    private MissaoModel missao;
 
     @Override
     public String toString() {
@@ -40,8 +40,6 @@ public class NinjaModel {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", idade=" + idade +
-                ", email='" + email + '\'' +
-                ", id_missao=" + id_missao +
-                '}';
+                ", email='" + email + '\'';
     }
 }
